@@ -1,0 +1,7 @@
+{
+  "name": "HomeAutomation",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

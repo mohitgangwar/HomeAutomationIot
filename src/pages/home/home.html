@@ -1,0 +1,159 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-md-6>
+        <ion-card class="card chat-item">
+          <div>
+            <ion-row>
+              <ion-col>
+                <img src="../../assets/images/card1_2.png" (click)=onLivingRoom() />
+              </ion-col>
+            </ion-row>  
+          </div>
+        </ion-card>
+      </ion-col>
+      <ion-col col-md-6>
+        <ion-card class="card">
+          <ion-row>
+            <ion-col>
+              <img src="../../assets/images/card2_2.png"  (click)=onKitchen()/>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col col-md-6>
+        <ion-card class="card">
+          <ion-row>
+            <ion-col>
+              <img src="../../assets/images/card3.png" (click)=onWash()/>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col col-md-6>
+        <ion-card class="card">
+          <ion-row>
+            <ion-col>
+              <img src="../../assets/images/card4.png" (click)=onBedroom() />
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-md-12>  
+        <ion-list>
+          <ion-chip color="primary">
+            <ion-icon name="heart" color="dark"></ion-icon>
+              <ion-label class="cardFont">Air Quality : {{value1func}}</ion-label>
+          </ion-chip>
+          <br>
+          <ion-chip color="dark">
+            <ion-icon name="water"></ion-icon>
+            <ion-label class="fabFont">Humidity : {{value2func}} %</ion-label>
+          </ion-chip>
+          <br>
+          <ion-chip color="primary">
+            <ion-icon name="thermometer" color="dark"></ion-icon>
+            <ion-label class="cardFont">Temperature : {{value4func}} °C</ion-label>
+          </ion-chip>
+          <br>
+          <ion-fab bottom right>
+            <button ion-fab mini (click)="listen()">
+              <ion-icon name="mic"></ion-icon>
+            </button>
+          </ion-fab>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- <ion-fab bottom left>
+      <button ion-fab mini>
+        <ion-icon name="thermometer"></ion-icon>
+      </button>
+      <ion-fab-list side="top">
+        
+      </ion-fab-list>
+  </ion-fab> -->
+  <!-- <ion-card style="background-color:purple">
+    <ion-slides  autoplay="5000" loop="true" speed="500" pager="true" (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+          <h1>This is my Home Automation App</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+      <ion-slide>
+          <h1>Slide 4</h1>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+  <button ion-button (click)="getPermission()">Get Permission</button> -->
+
+  <ion-card>
+    <ion-card-content *ngFor="let match of matches">
+      <p>{{ match }}</p>
+    </ion-card-content>
+  </ion-card>
+  <!-- <ion-card>
+      <p>Is listening ? : {{ isListening }}</p>
+    </ion-card> -->
+</ion-content>
+
